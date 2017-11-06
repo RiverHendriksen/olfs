@@ -8,30 +8,30 @@
 
 m4_include([curl_test_macros.m4])
 
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc.dds)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc.das)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc.dmr)
-AT_CURL_DAP2_DATA_RESPONSE_TEST(nc3/fnoc1.nc.dods)
-AT_CURL_DAP4_DATA_RESPONSE_TEST(nc3/fnoc1.nc.dap)
-AT_CURL_RESPONSE_PATTERN_MATCH_TEST(nc3/fnoc1.nc.html)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc.dds)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc.das)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc.dmr)
+AT_CURL_DAP2_DATA_RESPONSE_TEST(nc/fnoc1.nc.dods)
+AT_CURL_DAP4_DATA_RESPONSE_TEST(nc/fnoc1.nc.dap)
+AT_CURL_RESPONSE_PATTERN_MATCH_TEST(nc/fnoc1.nc.html)
 ########################################################################################################
 
 
 
 ####################################################
-# TestName: nc3/fnoc1.nc_lat
+# TestName: nc/fnoc1.nc_lat
 # BaseUrl:  http://task-31.opendap.org:8080/s3/catalog/test/data/nc/fnoc1.nc
 # DAP2 CE:  ?lat
 # DAP4 CE:  ?dap4.ce=lat
 #
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc_lat.dds)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc_lat.das)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc_lat.html)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc_lat.info)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc_lat.ascii)
-AT_CURL_DAP2_DATA_RESPONSE_TEST(nc3/fnoc1.nc_lat.dods)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc_lat.dmr)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc_lat.dmr.html)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc_lat.dmr.xml)
-AT_CURL_RESPONSE_TEST(nc3/fnoc1.nc_lat.dap.csv)
-AT_CURL_DAP4_DATA_RESPONSE_TEST(nc3/fnoc1.nc_lat.dap)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc_lat.dds)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc_lat.das)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc_lat.html)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc_lat.info)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc_lat.ascii)
+AT_CURL_DAP2_DATA_RESPONSE_TEST(nc/fnoc1.nc_lat.dods)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc_lat.dmr)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc_lat.dmr.html)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc_lat.dmr.xml)
+AT_CURL_RESPONSE_TEST(nc/fnoc1.nc_lat.dap.csv)
+AT_CURL_DAP4_DATA_RESPONSE_TEST(nc/fnoc1.nc_lat.dap)
