@@ -158,7 +158,50 @@ m4_define([_AT_CURL_HEADER_AND_RESPONSE_TEST], [dnl
     AT_CLEANUP
 ])
 
+#--------------------------------------------------------------------------------------
+#
+# Net CDF 3 and 4
+# The http_header baseline MUST be edited to make a correct regular expression
+#
+m4_define([_AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST], [dnl
 
+    AT_SETUP([CURL $1])
+    AT_KEYWORDS([curl])
+
+    input=$1
+    baseline=$2
+
+      AS_IF([test -n "$baselines" -a x$baselines = xyes],
+        [
+        AT_CHECK([besstandalone -c $abs_builddir/bes.conf -i $input > test.nc])
+        
+        dnl first get the version number, then the header, then the data
+        AT_CHECK([ncdump -k test.nc > $baseline.ver.tmp])
+        AT_CHECK([ncdump -h test.nc > $baseline.header.tmp])
+        REMOVE_DATE_TIME([$baseline.header.tmp])
+        AT_CHECK([ncdump test.nc > $baseline.data.tmp])
+        REMOVE_DATE_TIME([$baseline.data.tmp])
+        ],
+        [
+        AT_CHECK([besstandalone -c $abs_builddir/bes.conf -i $input > test.nc])
+        
+        AT_CHECK([ncdump -k test.nc > tmp])
+        AT_CHECK([diff -b -B $baseline.ver tmp])
+        
+        AT_CHECK([ncdump -h test.nc > tmp])
+        REMOVE_DATE_TIME([tmp])
+        AT_CHECK([diff -b -B $baseline.header tmp])
+        
+        AT_CHECK([ncdump test.nc > tmp])
+        REMOVE_DATE_TIME([tmp])
+        AT_CHECK([diff -b -B $baseline.data tmp])
+        
+        AT_XFAIL_IF([test "$3" = "xfail"])
+        ])
+
+    AT_CLEANUP
+    
+])
 
 
 #######################################################################################
@@ -182,6 +225,8 @@ m4_define([AT_CURL_RESPONSE_PATTERN_MATCH_TEST],
 m4_define([AT_CURL_RESPONSE_AND_HTTP_HEADER_TEST],
 [_AT_CURL_HEADER_AND_RESPONSE_TEST([$abs_srcdir/$1], [$abs_srcdir/$1.baseline], [$2])])
 
+m4_define([AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST],
+[_AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST([$abs_srcdir/$1], [$abs_srcdir/$1.baseline], [$2])])
 
 #######################################################################################
 #######################################################################################
