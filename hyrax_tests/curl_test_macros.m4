@@ -163,6 +163,12 @@ m4_define([_AT_CURL_HEADER_AND_RESPONSE_TEST], [dnl
 # Net CDF 3 and 4
 # The http_header baseline MUST be edited to make a correct regular expression
 #
+
+m4_define([REMOVE_DATE_TIME], [dnl
+    sed 's@[[0-9]]\{4\}-[[0-9]]\{2\}-[[0-9]]\{2\} [[0-9]]\{2\}:[[0-9]]\{2\}:[[0-9]]\{2\}@removed date-time@g' < $1 > $1.sed
+    mv $1.sed $1
+])
+
 m4_define([_AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST], [dnl
 
     AT_SETUP([CURL $1])
@@ -173,8 +179,8 @@ m4_define([_AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST], [dnl
 
       AS_IF([test -n "$baselines" -a x$baselines = xyes],
         [
-        AT_CHECK([besstandalone -c $abs_builddir/bes.conf -i $input > test.nc])
-        
+        AT_CHECK([curl -D http_header -K $input], [0], [stdout])
+        AT_CHECK([mv stdout test.nc])
         dnl first get the version number, then the header, then the data
         AT_CHECK([ncdump -k test.nc > $baseline.ver.tmp])
         AT_CHECK([ncdump -h test.nc > $baseline.header.tmp])
@@ -183,7 +189,8 @@ m4_define([_AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST], [dnl
         REMOVE_DATE_TIME([$baseline.data.tmp])
         ],
         [
-        AT_CHECK([besstandalone -c $abs_builddir/bes.conf -i $input > test.nc])
+        AT_CHECK([curl -D http_header -K $input], [0], [stdout])
+        AT_CHECK([mv stdout test.nc])
         
         AT_CHECK([ncdump -k test.nc > tmp])
         AT_CHECK([diff -b -B $baseline.ver tmp])

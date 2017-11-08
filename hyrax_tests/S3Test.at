@@ -30,7 +30,7 @@ AT_CURL_RESPONSE_TEST(nc/coads_climatology_s3.dmr)
 #AT_CURL_DAP4_DATA_RESPONSE_TEST(nc/coads_climatology_s3.dap)
 # NetCDF 3 and 4
 AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST(nc/coads_climatology_s3.nc)
-#AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST(nc/coads_climatology_s3.nc4)
+AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST(nc/coads_climatology_s3.nc4)
 
 ####################################################
 # TestName: nc/fnoc1.nc
@@ -52,8 +52,8 @@ AT_CURL_RESPONSE_TEST(nc/fnoc1.nc.dmr)
 #AT_CURL_RESPONSE_TEST(nc/fnoc1.nc.dap.csv)
 #AT_CURL_DAP4_DATA_RESPONSE_TEST(nc/fnoc1.nc.dap)
 # NetCDF 3 and 4
-#AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST(nc/fnoc1.nc.nc)
-#AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST(nc/fnoc1.nc.nc4)
+AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST(nc/fnoc1.nc.nc)
+AT_CURL_NETCDF_HEADER_AND_RESPONSE_TEST(nc/fnoc1.nc.nc4)
 
 
 ####################################################
