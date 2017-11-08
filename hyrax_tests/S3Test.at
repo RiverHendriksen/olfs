@@ -28,6 +28,9 @@ AT_CURL_RESPONSE_TEST(nc/coads_climatology_s3.dmr)
 #AT_CURL_RESPONSE_TEST(nc/coads_climatology_s3.dmr.xml)
 #AT_CURL_RESPONSE_TEST(nc/coads_climatology_s3.dap.csv)
 #AT_CURL_DAP4_DATA_RESPONSE_TEST(nc/coads_climatology_s3.dap)
+# NetCDF 3 and 4
+AT_BESCMD_NETCDF_RESPONSE_TEST(nc/coads_climatology_s3.nc)
+#AT_BESCMD_NETCDF_RESPONSE_TEST(nc/coads_climatology_s3.nc4)
 
 ####################################################
 # TestName: nc/fnoc1.nc
@@ -48,6 +51,10 @@ AT_CURL_RESPONSE_TEST(nc/fnoc1.nc.dmr)
 #AT_CURL_RESPONSE_TEST(nc/fnoc1.nc.dmr.xml)
 #AT_CURL_RESPONSE_TEST(nc/fnoc1.nc.dap.csv)
 #AT_CURL_DAP4_DATA_RESPONSE_TEST(nc/fnoc1.nc.dap)
+# NetCDF 3 and 4
+#AT_BESCMD_NETCDF_RESPONSE_TEST(nc/fnoc1.nc.nc)
+#AT_BESCMD_NETCDF_RESPONSE_TEST(nc/fnoc1.nc.nc4)
+
 
 ####################################################
 # TestName: airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5
@@ -68,6 +75,11 @@ AT_CURL_RESPONSE_TEST(airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G1501315582
 #AT_CURL_RESPONSE_TEST(airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.dmr.xml)
 #AT_CURL_RESPONSE_TEST(airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.dap.csv)
 #AT_CURL_DAP4_DATA_RESPONSE_TEST(airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.dap)
+# NetCDF 3 and 4
+#AT_BESCMD_NETCDF_RESPONSE_TEST(airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.nc)
+#AT_BESCMD_NETCDF_RESPONSE_TEST(airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.nc4)
+
+
 
 ####################################################
 # TestName: merra2/MERRA2_100.const_2d_lnd_Nx.00000000
@@ -88,3 +100,6 @@ AT_CURL_RESPONSE_TEST(merra2/MERRA2_100.const_2d_lnd_Nx.00000000.dmr)
 #AT_CURL_RESPONSE_TEST(merra2/MERRA2_100.const_2d_lnd_Nx.00000000.dmr.xml)
 #AT_CURL_RESPONSE_TEST(merra2/MERRA2_100.const_2d_lnd_Nx.00000000.dap.csv)
 #AT_CURL_DAP4_DATA_RESPONSE_TEST(merra2/MERRA2_100.const_2d_lnd_Nx.00000000.dap)
+# NetCDF 3 and 4
+#AT_BESCMD_NETCDF_RESPONSE_TEST(merra2/MERRA2_100.const_2d_lnd_Nx.00000000.nc)
+#AT_BESCMD_NETCDF_RESPONSE_TEST(merra2/MERRA2_100.const_2d_lnd_Nx.00000000.nc4)
