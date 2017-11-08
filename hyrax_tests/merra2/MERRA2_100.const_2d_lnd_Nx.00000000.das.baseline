@@ -1,0 +1,256 @@
+Attributes {
+    lon {
+        String long_name "longitude";
+        String units "degrees_east";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    lat {
+        String long_name "latitude";
+        String units "degrees_north";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    time {
+        String long_name "time";
+        String units "minutes since 1980-10-01 03:00:00";
+        Int32 time_increment 240000;
+        Int32 begin_date 19801001;
+        Int32 begin_time 30000;
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzsf {
+        String long_name "Thickness_of_soil_layer_associated_with_SFMC_and_GWETTOP";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzsf";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzrz {
+        String long_name "Thickness_of_soil_layer_associated_with_RZMC_and_GWETROOT";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzrz";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzpr {
+        String long_name "Thickness_of_soil_layer_associated_with_PRMC_and_GWETPROF";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzpr";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzts {
+        String long_name "Thickness_of_soil_layer_associated_with_TSAT_TUNST_and_TWLT";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzts";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzgt1 {
+        String long_name "Thickness_of_soil_layer_associated_with_TSOIL1";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzgt1";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzgt2 {
+        String long_name "Thickness_of_soil_layer_associated_with_TSOIL2";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzgt2";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzgt3 {
+        String long_name "Thickness_of_soil_layer_associated_with_TSOIL3";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzgt3";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzgt4 {
+        String long_name "Thickness_of_soil_layer_associated_with_TSOIL4";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzgt4";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzgt5 {
+        String long_name "Thickness_of_soil_layer_associated_with_TSOIL5";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzgt5";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    dzgt6 {
+        String long_name "Thickness_of_soil_layer_associated_with_TSOIL6";
+        String units "m";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "dzgt6";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    wpwet {
+        String long_name "Soil_wilting_point_in_degree_of_saturation_units";
+        String units "fraction";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "wpwet";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    wpmc {
+        String long_name "Soil_wilting_point_in_volumetric_units";
+        String units "m3 m-3";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "wpmc";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    wpemw {
+        String long_name "Soil_wilting_point_in_units_of_equivalent_mass_of_total_profile_water";
+        String units "kg m-2";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "wpemw";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    poros {
+        String long_name "Soil_porosity_in_volumetric_units";
+        String units "m3 m-3";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "poros";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    cdcr2 {
+        String long_name "Maximum_water_holding_capacity_of_land_element";
+        String units "kg m-2";
+        Float32 _FillValue 9.99999987e+14;
+        Float32 missing_value 9.99999987e+14;
+        Float32 fmissing_value 9.99999987e+14;
+        Float32 scale_factor 1.00000000;
+        Float32 add_offset 0.00000000;
+        String standard_name "cdcr2";
+        Float32 vmax 9.99999987e+14;
+        Float32 vmin -9.99999987e+14;
+        Float32 valid_range -9.99999987e+14, 9.99999987e+14;
+    }
+    NC_GLOBAL {
+        String History "Original file generated: Mon Mar 21 17:52:09 2016 GMT";
+        String Comment "GMAO filename: MERRA2.const_2d_lnd_Nx.00000000.nc4";
+        String Filename "MERRA2_100.const_2d_lnd_Nx.00000000.nc4";
+        String Conventions "CF-1";
+        String Institution "NASA Global Modeling and Assimilation Office";
+        String References "http://gmao.gsfc.nasa.gov";
+        String Format "NetCDF-4/HDF-5";
+        String SpatialCoverage "global";
+        String VersionID "5.12.4";
+        String TemporalRange "1980-01-01 -> 2016-12-31";
+        String identifier_product_doi_authority "http://dx.doi.org/";
+        String ShortName "M2C0NXLND";
+        String RangeBeginningDate "1980-01-01";
+        String RangeBeginningTime "00:00:00.000000";
+        String RangeEndingDate "2020-12-31";
+        String RangeEndingTime "00:00:00.000000";
+        String GranuleID "MERRA2_100.const_2d_lnd_Nx.00000000.nc4";
+        String ProductionDateTime "Original file generated: Mon Mar 21 17:52:09 2016 GMT";
+        String LongName "MERRA2 const_2d_asm_Nx: 2d,Constant,Time-invariant,Single-Level,Assimilation,Constant Land Surface Model Parameters";
+        String Title "MERRA2 const_2d_asm_Nx: 2d,Constant,Time-invariant,Single-Level,Assimilation,Constant Land Surface Model Parameters";
+        String SouthernmostLatitude "-90.0";
+        String NorthernmostLatitude "90.0";
+        String WesternmostLongitude "-180.0";
+        String EasternmostLongitude "179.375";
+        String LatitudeResolution "0.5 ";
+        String LongitudeResolution "0.625 ";
+        String DataResolution "0.5 x 0.625 ";
+        String Source "CVS tag: GEOSadas-5_12_4";
+        String Contact "http://gmao.gsfc.nasa.gov";
+        String identifier_product_doi "10.5067/3KDJP4SU2WOE";
+    }
+    DODS_EXTRA {
+        String Unlimited_Dimension "time";
+    }
+}

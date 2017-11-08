@@ -1,0 +1,10 @@
+Dataset {
+    Grid {
+      Array:
+        Float32 dzsf[time = 1][lat = 361][lon = 576];
+      Maps:
+        Int32 time[time = 1];
+        Float64 lat[lat = 361];
+        Float64 lon[lon = 576];
+    } dzsf;
+} MERRA2_100.const_2d_lnd_Nx.00000000.nc4;

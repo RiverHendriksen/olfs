@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Dataset xmlns="http://xml.opendap.org/ns/DAP/4.0#" xml:base="http://task-31.opendap.org:8080/s3/dap/tb13/merra2/MERRA2_100.const_2d_lnd_Nx.00000000.nc4" dapVersion="4.0" dmrVersion="1.0" name="MERRA2_100.const_2d_lnd_Nx.00000000.nc4">
+    <Dimension name="lon" size="576"/>
+    <Dimension name="lat" size="361"/>
+    <Dimension name="time" size="1"/>
+    <Float64 name="lon">
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>longitude</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>degrees_east</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+    </Float64>
+    <Float64 name="lat">
+        <Dim name="/lat"/>
+        <Attribute name="long_name" type="String">
+            <Value>latitude</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>degrees_north</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+    </Float64>
+    <Int32 name="time">
+        <Dim name="/time"/>
+        <Attribute name="long_name" type="String">
+            <Value>time</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>minutes since 1980-10-01 03:00:00</Value>
+        </Attribute>
+        <Attribute name="time_increment" type="Int32">
+            <Value>240000</Value>
+        </Attribute>
+        <Attribute name="begin_date" type="Int32">
+            <Value>19801001</Value>
+        </Attribute>
+        <Attribute name="begin_time" type="Int32">
+            <Value>30000</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+    </Int32>
+    <Float32 name="dzsf">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_SFMC_and_GWETTOP</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzsf</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="dzrz">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_RZMC_and_GWETROOT</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzrz</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="dzpr">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_PRMC_and_GWETPROF</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzpr</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="dzts">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_TSAT_TUNST_and_TWLT</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzts</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="dzgt1">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_TSOIL1</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzgt1</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="dzgt2">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_TSOIL2</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzgt2</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="dzgt3">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_TSOIL3</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzgt3</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="dzgt4">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_TSOIL4</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzgt4</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="dzgt5">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_TSOIL5</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzgt5</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="dzgt6">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Thickness_of_soil_layer_associated_with_TSOIL6</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>dzgt6</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="wpwet">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Soil_wilting_point_in_degree_of_saturation_units</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>fraction</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>wpwet</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="wpmc">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Soil_wilting_point_in_volumetric_units</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m3 m-3</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>wpmc</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="wpemw">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Soil_wilting_point_in_units_of_equivalent_mass_of_total_profile_water</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>wpemw</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="poros">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Soil_porosity_in_volumetric_units</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m3 m-3</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>poros</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Float32 name="cdcr2">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Maximum_water_holding_capacity_of_land_element</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="fmissing_value" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.00000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.00000000</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>cdcr2</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-9.99999987e+14</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Float32">
+            <Value>-9.99999987e+14</Value>
+            <Value>9.99999987e+14</Value>
+        </Attribute>
+        <Map name="/time"/>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+    </Float32>
+    <Attribute name="NC_GLOBAL" type="Container">
+        <Attribute name="History" type="String">
+            <Value>Original file generated: Mon Mar 21 17:52:09 2016 GMT</Value>
+        </Attribute>
+        <Attribute name="Comment" type="String">
+            <Value>GMAO filename: MERRA2.const_2d_lnd_Nx.00000000.nc4</Value>
+        </Attribute>
+        <Attribute name="Filename" type="String">
+            <Value>MERRA2_100.const_2d_lnd_Nx.00000000.nc4</Value>
+        </Attribute>
+        <Attribute name="Conventions" type="String">
+            <Value>CF-1</Value>
+        </Attribute>
+        <Attribute name="Institution" type="String">
+            <Value>NASA Global Modeling and Assimilation Office</Value>
+        </Attribute>
+        <Attribute name="References" type="String">
+            <Value>http://gmao.gsfc.nasa.gov</Value>
+        </Attribute>
+        <Attribute name="Format" type="String">
+            <Value>NetCDF-4/HDF-5</Value>
+        </Attribute>
+        <Attribute name="SpatialCoverage" type="String">
+            <Value>global</Value>
+        </Attribute>
+        <Attribute name="VersionID" type="String">
+            <Value>5.12.4</Value>
+        </Attribute>
+        <Attribute name="TemporalRange" type="String">
+            <Value>1980-01-01 -&gt; 2016-12-31</Value>
+        </Attribute>
+        <Attribute name="identifier_product_doi_authority" type="String">
+            <Value>http://dx.doi.org/</Value>
+        </Attribute>
+        <Attribute name="ShortName" type="String">
+            <Value>M2C0NXLND</Value>
+        </Attribute>
+        <Attribute name="RangeBeginningDate" type="String">
+            <Value>1980-01-01</Value>
+        </Attribute>
+        <Attribute name="RangeBeginningTime" type="String">
+            <Value>00:00:00.000000</Value>
+        </Attribute>
+        <Attribute name="RangeEndingDate" type="String">
+            <Value>2020-12-31</Value>
+        </Attribute>
+        <Attribute name="RangeEndingTime" type="String">
+            <Value>00:00:00.000000</Value>
+        </Attribute>
+        <Attribute name="GranuleID" type="String">
+            <Value>MERRA2_100.const_2d_lnd_Nx.00000000.nc4</Value>
+        </Attribute>
+        <Attribute name="ProductionDateTime" type="String">
+            <Value>Original file generated: Mon Mar 21 17:52:09 2016 GMT</Value>
+        </Attribute>
+        <Attribute name="LongName" type="String">
+            <Value>MERRA2 const_2d_asm_Nx: 2d,Constant,Time-invariant,Single-Level,Assimilation,Constant Land Surface Model Parameters</Value>
+        </Attribute>
+        <Attribute name="Title" type="String">
+            <Value>MERRA2 const_2d_asm_Nx: 2d,Constant,Time-invariant,Single-Level,Assimilation,Constant Land Surface Model Parameters</Value>
+        </Attribute>
+        <Attribute name="SouthernmostLatitude" type="String">
+            <Value>-90.0</Value>
+        </Attribute>
+        <Attribute name="NorthernmostLatitude" type="String">
+            <Value>90.0</Value>
+        </Attribute>
+        <Attribute name="WesternmostLongitude" type="String">
+            <Value>-180.0</Value>
+        </Attribute>
+        <Attribute name="EasternmostLongitude" type="String">
+            <Value>179.375</Value>
+        </Attribute>
+        <Attribute name="LatitudeResolution" type="String">
+            <Value>0.5 </Value>
+        </Attribute>
+        <Attribute name="LongitudeResolution" type="String">
+            <Value>0.625 </Value>
+        </Attribute>
+        <Attribute name="DataResolution" type="String">
+            <Value>0.5 x 0.625 </Value>
+        </Attribute>
+        <Attribute name="Source" type="String">
+            <Value>CVS tag: GEOSadas-5_12_4</Value>
+        </Attribute>
+        <Attribute name="Contact" type="String">
+            <Value>http://gmao.gsfc.nasa.gov</Value>
+        </Attribute>
+        <Attribute name="identifier_product_doi" type="String">
+            <Value>10.5067/3KDJP4SU2WOE</Value>
+        </Attribute>
+    </Attribute>
+    <Attribute name="DODS_EXTRA" type="Container">
+        <Attribute name="Unlimited_Dimension" type="String">
+            <Value>time</Value>
+        </Attribute>
+    </Attribute>
+</Dataset>

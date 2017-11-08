@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:ds="http://xml.opendap.org/ns/DAP/4.0/dataset-services#">
+   <head>
+      <title>OPeNDAP Hyrax: Dataset Service Description for /s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html</title>
+      <link rel="stylesheet" href="/s3/docs/css/contents.css" type="text/css"/>
+      <link rel="stylesheet" href="/s3/docs/css/treeView.css" type="text/css"/>
+      <script type="text/javascript" src="/s3/js/CollapsibleLists.js"> </script>
+   </head>
+   <body>
+      <img alt="OPeNDAP Logo" src="/s3/docs/images/logo.gif"/>
+      <h1>
+                    Dataset Services Response
+                    <div class="medium">
+                       Dataset Resource ID: /s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html</div>
+      </h1>
+      <hr size="1" noshade="noshade"/>
+      <table border="0" width="100%">
+         <tr>
+            <td>
+               <div class="small">Supported DAP Versions: 
+        [<span style="font-weight: bold">3.2</span>]
+    
+        [<span style="font-weight: bold">3.0</span>]
+    
+        [<span style="font-weight: bold">2.0</span>]
+    </div>
+            </td>
+            <td align="right">
+               <div class="small">Server Version: <span style="font-weight: bold">Hyrax-“aws-dmr++”</span>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <pre>
+         <table border="0">
+            <tr>
+               <th align="left">Service Name
+                                <div class="small" style="margin-left: 10px;color: lightGrey;">Alternative Representations</div>
+                  <hr size="1" noshade="noshade"/>
+               </th>
+               <th align="center"/>
+               <th align="left">Description
+                                <div class="small" style="margin-left: 10px;color: lightGrey;">Resource Role ID</div>
+                  <hr size="1" noshade="noshade"/>
+               </th>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dsr">Dataset Services Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the Dataset Services Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dsr">application/vnd.opendap.dap4.dataset-services+xml</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The HTML representation of the DSR."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dsr.html">text/html</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The XML representation of the DSR."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dsr.xml">text/xml</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>An XML document itemizing the Services available for this dataset.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP4_Dataset_Services_Response">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/dataset-services</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap">DAP4 Data Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the DAP4 Data Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap">application/vnd.opendap.dap4.data</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="A comma separated values (CSV) representation of the DAP4 Data Response object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap.csv">text/csv</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="XML representation of the DAP4 Data Response object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap.xml">text/xml</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="NetCDF-3 representation of the DAP4 Data Response object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap.nc">application/x-netcdf</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="NetCDF-4 representation of the DAP4 Data Response object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap.nc4">application/x-netcdf;ver=4</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="GeoTIFF representation of the DAP4 Data Response object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap.tiff">image/tiff;application=geotiff</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="GML-JPEG2000 representation of the DAP4 Data Response object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap.jp2">image/jp2;application=gmljp2</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="JSON representation of the DAP4 Data Response object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap.json">application/json</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="JSON representation of the DAP4 Data Response object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dap.ijsn">application/json</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>DAP4 Data Response object.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP4:_Data_Response">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/data</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr">Dataset Metadata Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the Dataset Metadata Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr">application/vnd.opendap.dap4.dataset-metadata+xml</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="Normative representation of the Dataset Metadata Response document with a generic content type."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr.xml">text/xml</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="HTML representation of the Dataset Metadata Response document."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr.html">text/html</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="RDF representation of the Dataset Metadata Response document."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr.rdf">application/rdf+xml</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="JSON representation of the DAP4 Dataset Metadata object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr.json">application/json</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="JSON representation of the DAP4 Dataset Metadata object."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr.ijsn">application/json</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>DAP4 Dataset Description and Attribute XML Document.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#Dataset_Metadata_Response">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/dataset-metadata</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr.iso">ISO-19115 Metadata</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the ISO-19115 Metadata"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr.iso">text/xml</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="ISO-19115 Conformance Score for the Dataset Metadata Response document."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dmr.rubric">text/html</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>ISO-19115 metadata extracted form the normative DMR.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#Dataset_Metadata_Response">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/dataset-metadata</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.ver">Server Software Version.</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the Server Software Version."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.ver">text/xml</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>An XML document containing detailed software version information for this server.
+                        (<a href="http://docs.opendap.org/index.php/DAP4_Web_Services#DAP4:_Dataset_Service_-_The_metadata">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/server-version</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.file">Data File Access</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the Data File Access"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.file">text/html</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>Simple download access to the underlying data file.
+                        (<a href="http://docs.opendap.org/index.php/DAP4_Web_Services">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/file-access</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html">Dataset Services Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the Dataset Services Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html">application/vnd.opendap.dap4.dataset-services+xml</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The HTML representation of the DSR."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.html">text/html</a>
+                                    </li>
+                                 </div>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The XML representation of the DSR."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.xml">text/xml</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>An XML document itemizing the Services available for this dataset.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP4_Dataset_Services_Response">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/dataset-services</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dods">DAP2 Data</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the DAP2 Data"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dods">application/octet-stream</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>DAP2 Data Object.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/data</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.ascii">Plain text ASCII encoded DAP2 data</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the Plain text ASCII encoded DAP2 data"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.ascii">text/plain</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>The DAP2 Data response in plain text ASCII form.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_ASCII_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/ascii</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.csv">Comma Separated Values Data Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the Comma Separated Values Data Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.csv">text/csv</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>Comma Separated Values representation of the DAP2 Data Response object.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/data/csv</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.nc">NetCDF-3 Data Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the NetCDF-3 Data Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.nc">application/x-netcdf</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>NetCDF-3 representation of the DAP2 Data Response object.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/data/netcdf-3</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.nc4">NetCDF-4 Data Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the NetCDF-4 Data Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.nc4">application/x-netcdf;ver=4</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>NetCDF-4 representation of the DAP2 Data Response object.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/data/netcdf-4</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.xdap">DAP2 XML Data Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the DAP2 XML Data Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.xdap">text/xml</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>An XML document containing both the DAP2 dataset's structural metadata along with data values.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/xml-data</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.tiff">GeoTIFF Data Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the GeoTIFF Data Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.tiff">image/tiff;application=geotiff</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>GeoTIFF representation of the DAP4 Data Response object.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/data/geotiff</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.jp2">GML-JPEG2000 Data Response</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the GML-JPEG2000 Data Response"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.jp2">image/jp2;application=gmljp2</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>GML-JPEG2000 representation of the DAP4 Data Response object.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/data/gmljp2</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.json">JSON encoded DAP2 data.</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the JSON encoded DAP2 data."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.json">application/json</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>JSON representation of the DAP2 Data Response object.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_JSON_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/data/json</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.ijsn">JSON encoded DAP2 data.</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the JSON encoded DAP2 data."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.ijsn">application/json</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>JSON representation of the DAP2 Data Response object.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_JSON_Data_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/data/json</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.ddx">DAP2 DDX</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the DAP2 DDX"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.ddx">text/xml</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>OPeNDAP Data Description and Attribute XML Document.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_DDX_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/ddx</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dds">DAP2 DDS</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the DAP2 DDS"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.dds">text/plain</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>DAP2 Data Description Structure (DDS).
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_DDS_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/dds</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.das">DAP2 DAS</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the DAP2 DAS"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.das">text/plain</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>DAP2 Dataset Attribute Structure (DAS).
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_DAS_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/das</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.rdf">DAP2 RDF</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the DAP2 RDF"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.rdf">application/rdf+xml</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>An RDF representation of the DAP2 Dataset response (DDX) document.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_DDX_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/rdf</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.info">DAP2 INFO</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the DAP2 INFO"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.info">text/html</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>DAP2 Dataset Information HTML Page.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_Info_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap2/info</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.iso">ISO-19115 Metadata</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the ISO-19115 Metadata"
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.iso">text/xml</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>ISO-19115 metadata extracted form the normative DMR.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_DDX_Service">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/dataset-metadata</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <dl class="tightView">
+                     <dt>
+                        <a href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.rubric">ISO-19115 Conformance Score.</a>
+                        <ul class="collapsibleList">
+                           <li>
+                              <div class="small">alt. representations</div>
+                              <ul>
+                                 <div class="small" style="margin-left: 10px;">
+                                    <li>
+                                       <a title="The normative form of the ISO-19115 Conformance Score."
+                                          href="/s3/dap/tb13/airs/AIRS.2015.01.01.L3.RetStd_IR001.v6.0.11.0.G15013155825.nc.h5.html.rubric">text/html</a>
+                                    </li>
+                                 </div>
+                              </ul>
+                           </li>
+                        </ul>
+                     </dt>
+                  </dl>
+               </td>
+               <td/>
+               <td>ISO-19115 Conformance Score for the Dataset Metadata Response document.
+                        (<a href="http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#Dataset_Metadata_Response">more</a>)
+                    <br/>
+                  <span class="small" style="margin-left: 10px;color: lightGrey;">http://services.opendap.org/dap4/dataset-metadata</span>
+               </td>
+            </tr>
+         </table>
+      </pre>
+      <hr size="1" noshade="noshade"/>
+      <div class="medium_bold">Server Extensions Available For This Dataset</div>
+      <pre>
+         <table border="0">
+            <tr>
+               <th align="left">Function</th>
+               <th align="center"/>
+               <th align="left">Description</th>
+            </tr>
+            <tr>
+               <td>geogrid</td>
+               <td/>
+               <td>Allows a DAP Grid variable to be sub-sampled using georeferenced values. (<a href="">more</a>)</td>
+            </tr>
+            <tr>
+               <td>grid</td>
+               <td/>
+               <td>Allows a DAP Grid variable to be sub-sampled using the values of the coordinate axes. (<a href="">more</a>)</td>
+            </tr>
+            <tr>
+               <td>linear_scale</td>
+               <td/>
+               <td>Applies a linear scale transform to the named variable. (<a href="">more</a>)</td>
+            </tr>
+            <tr>
+               <td>version</td>
+               <td/>
+               <td>Returns version information for each server side function. (<a href="">more</a>)</td>
+            </tr>
+            <tr>
+               <th align="left">Extension</th>
+               <th align="center"/>
+               <th align="left">Description</th>
+            </tr>
+            <tr>
+               <td>async</td>
+               <td/>
+               <td>This server supports asynchronous transactions.. (<a href="">more</a>)</td>
+            </tr>
+         </table>
+      </pre>
+      <hr size="1" noshade="noshade"/>
+      <table width="100%" border="0">
+         <tr>
+            <td/>
+            <td>
+               <div class="small" text-align="right">
+                                Hyrax development sponsored by
+                                <a href="http://www.nsf.gov/">NSF</a>
+                                ,
+                                <a href="http://www.nasa.gov/">NASA</a>
+                                , and
+                                <a href="http://www.noaa.gov/">NOAA</a>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <h3>OPeNDAP Hyrax (“aws-dmr++”)
+
+                    <br/>
+         <a href="/s3/docs/">Documentation</a>
+      </h3>
+   </body>
+   <script>CollapsibleLists.apply();</script>
+</html>
