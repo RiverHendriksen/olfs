@@ -3,8 +3,10 @@
  * // This file is part of the "Hyrax Data Server" project.
  * //
  * //
- * // Copyright (c) 2013 OPeNDAP, Inc.
- * // Author: Nathan David Potter  <ndp@opendap.org>
+ * // Copyright (c) 2018 OPeNDAP, Inc.
+ * // Author: Corey Hemphill <hemphilc@oregonstate.edu>
+ * // Author: River Hendriksen <hendriri@oregonstate.edu>
+ * // Author: Riley Rimer <rrimer@oregonstate.edu>
  * //
  * // This library is free software; you can redistribute it and/or
  * // modify it under the terms of the GNU Lesser General Public
