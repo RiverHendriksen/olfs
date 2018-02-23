@@ -33,50 +33,55 @@ import opendap.bes.dap4Responders.MediaType;
 import opendap.coreServlet.OPeNDAPException;
 import opendap.coreServlet.ReqInfo;
 import opendap.coreServlet.RequestCache;
+import opendap.coreServlet.Scrub;
+import opendap.dap.User;
 import opendap.dap4.QueryParameters;
-import opendap.http.mediaTypes.DMR;
+import opendap.http.mediaTypes.Json;
+import opendap.http.mediaTypes.CovJson;
 import org.slf4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.OutputStream;
 
-
-public class NormativeDMR extends Dap4Responder {
-
+/**
+ * Created by IntelliJ IDEA.
+ * User: ndp
+ * Date: 1/16/13
+ * Time: 4:44 PM
+ * To change this template use File | Settings | File Templates.
+ */
+public class CovJsonDMR extends Dap4Responder {
 
 
     private Logger log;
-    private static String defaultRequestSuffix = ".dmr";
+    private static String defaultRequestSuffix = ".covjson";
 
 
-    public NormativeDMR(String sysPath, BesApi besApi, boolean addTypeSuffixToDownloadFilename) {
+
+    public CovJsonDMR(String sysPath, BesApi besApi, boolean addTypeSuffixToDownloadFilename) {
         this(sysPath, null, defaultRequestSuffix, besApi, addTypeSuffixToDownloadFilename);
     }
 
-    public NormativeDMR(String sysPath, String pathPrefix, BesApi besApi, boolean addTypeSuffixToDownloadFilename) {
+    public CovJsonDMR(String sysPath, String pathPrefix, BesApi besApi, boolean addTypeSuffixToDownloadFilename) {
         this(sysPath, pathPrefix, defaultRequestSuffix, besApi, addTypeSuffixToDownloadFilename);
     }
 
-    public NormativeDMR(String sysPath, String pathPrefix, String requestSuffix, BesApi besApi, boolean addFileoutTypeSuffixToDownloadFilename) {
-        super(sysPath, pathPrefix, requestSuffix, besApi);
+    public CovJsonDMR(String sysPath, String pathPrefix, String requestSuffixRegex, BesApi besApi, boolean addTypeSuffixToDownloadFilename) {
+        super(sysPath, pathPrefix, requestSuffixRegex, besApi);
         log = org.slf4j.LoggerFactory.getLogger(this.getClass());
+        /*
+        * NOTE
+        * I really dont know what any of this stuff does so I haven't changed it to be used for covjson
+        * -Riley
+        */
+        addTypeSuffixToDownloadFilename(addTypeSuffixToDownloadFilename);//
+        setServiceRoleId("http://services.opendap.org/dap4/data/json");//
+        setServiceTitle("JSON Metadadata Response");//
+        setServiceDescription("JSON representation of the DAP4 Dataset Metadata object.");//
+        setServiceDescriptionLink("http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#Dataset_Metadata_Response");//
 
-
-        addTypeSuffixToDownloadFilename(addFileoutTypeSuffixToDownloadFilename);
-        setServiceRoleId("http://services.opendap.org/dap4/dataset-metadata");
-        setServiceTitle("Dataset Metadata Response");
-        setServiceDescription("DAP4 Dataset Description and Attribute XML Document.");
-        setServiceDescriptionLink("http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#Dataset_Metadata_Response");
-
-        setNormativeMediaType(new DMR(getRequestSuffix()));
-
-        addAltRepResponder(new XmlDMR   (sysPath, pathPrefix, besApi, addFileoutTypeSuffixToDownloadFilename));
-        addAltRepResponder(new HtmlDMR  (sysPath, pathPrefix, besApi));
-        addAltRepResponder(new RdfDMR   (sysPath, pathPrefix, besApi, addFileoutTypeSuffixToDownloadFilename));
-        addAltRepResponder(new JsonDMR  (sysPath, pathPrefix, besApi, addFileoutTypeSuffixToDownloadFilename));
-        addAltRepResponder(new IjsonDMR (sysPath, pathPrefix, besApi, addFileoutTypeSuffixToDownloadFilename));
-        addAltRepResponder(new CovJsonDMR (sysPath, pathPrefix, besApi, addFileoutTypeSuffixToDownloadFilename));
+        setNormativeMediaType(new Json(getRequestSuffix()));//
 
         log.debug("Using RequestSuffix:              '{}'", getRequestSuffix());
         log.debug("Using CombinedRequestSuffixRegex: '{}'", getCombinedRequestSuffixRegex());
@@ -84,9 +89,9 @@ public class NormativeDMR extends Dap4Responder {
     }
 
 
-
     public boolean isDataResponder(){ return false; }
     public boolean isMetadataResponder(){ return true; }
+
 
 
 
@@ -96,8 +101,6 @@ public class NormativeDMR extends Dap4Responder {
         String requestedResourceId = ReqInfo.getLocalUrl(request);
         QueryParameters qp = new QueryParameters(request);
 
-        String xmlBase = getXmlBase(request);
-
         String resourceID = getResourceId(requestedResourceId, false);
 
 
@@ -105,31 +108,43 @@ public class NormativeDMR extends Dap4Responder {
 
         log.debug("Sending {} for dataset: {}",getServiceTitle(),resourceID);
 
+        response.setHeader("Content-Disposition", " attachment; filename=\"" +getDownloadFileName(resourceID)+"\"");
+
+        Version.setOpendapMimeHeaders(request, response, besApi);
+
         MediaType responseMediaType =  getNormativeMediaType();
 
         // Stash the Media type in case there's an error. That way the error handler will know how to encode the error.
         RequestCache.put(OPeNDAPException.ERROR_RESPONSE_MEDIA_TYPE_KEY, responseMediaType);
 
         response.setContentType(responseMediaType.getMimeType());
-        Version.setOpendapMimeHeaders(request,response,besApi);
+
+        Version.setOpendapMimeHeaders(request, response, besApi);
+
         response.setHeader("Content-Description", getNormativeMediaType().getMimeType());
-        // Commented because of a bug in the OPeNDAP C++ stuff...
-        //response.setHeader("Content-Encoding", "plain");
+
+
+
+        User user = new User(request);
 
 
         OutputStream os = response.getOutputStream();
 
 
+        besApi.writeDap4MetadataAsCovJson(
+                resourceID,
+                qp,
+                user.getMaxResponseSize(),
+                os);
 
 
-        besApi.writeDMR(resourceID, qp, xmlBase, os);
 
         os.flush();
-        log.info("Sent {}",getServiceTitle());
+        log.debug("Sent {}",getServiceTitle());
+
 
 
     }
-
 
 
 
