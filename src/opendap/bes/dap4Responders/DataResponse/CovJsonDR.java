@@ -75,16 +75,16 @@ public class CovJsonDR extends Dap4Responder {
         log = org.slf4j.LoggerFactory.getLogger(this.getClass());
         /*
         * NOTE
-        * I really dont know what any of this stuff does so I haven't changed it to be used for covjson
+        * some of this needs to be updated eventually
         * -Riley
         */
         addTypeSuffixToDownloadFilename(addFileoutTypeSuffixToDownloadFilename);//
-        setServiceRoleId("http://services.opendap.org/dap4/data/json");//
-        setServiceTitle("JSON Data Response");//
-        setServiceDescription("JSON representation of the DAP4 Data Response object.");//
+        setServiceRoleId("http://services.opendap.org/dap4/data/covjson");//
+        setServiceTitle("COVJSON Data Response");//
+        setServiceDescription("COVJSON representation of the DAP4 Data Response object.");//
         setServiceDescriptionLink("http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP4:_Data_Response");//
 
-        setNormativeMediaType(new Json(getRequestSuffix()));//
+        setNormativeMediaType(new CovJson(getRequestSuffix()));//
 
         log.debug("Using RequestSuffix:              '{}'", getRequestSuffix());
         log.debug("Using CombinedRequestSuffixRegex: '{}'", getCombinedRequestSuffixRegex());

@@ -61,16 +61,16 @@ public class CovJson extends Dap4Responder {
 
         /*
         * NOTE
-        * I really dont know what any of this stuff does so I haven't changed it to be used for covjson
+        * some of this needs to be updated eventually
         * -Riley
         */
         addTypeSuffixToDownloadFilename(addTypeSuffixToDownloadFilename); //
-        setServiceRoleId("http://services.opendap.org/dap2/data/json");//
-        setServiceTitle("JSON encoded DAP2 data.");//
-        setServiceDescription("JSON representation of the DAP2 Data Response object.");//
+        setServiceRoleId("http://services.opendap.org/dap2/data/covjson");//
+        setServiceTitle("COVJSON encoded DAP2 data.");//
+        setServiceDescription("COVJSON representation of the DAP2 Data Response object.");//
         setServiceDescriptionLink("http://docs.opendap.org/index.php/DAP4:_Specification_Volume_2#DAP2:_JSON_Data_Service");//
 
-        setNormativeMediaType(new opendap.http.mediaTypes.Json(getRequestSuffix()));//
+        setNormativeMediaType(new opendap.http.mediaTypes.CovJson(getRequestSuffix()));//
 
         log.debug("Using RequestSuffix:              '{}'", getRequestSuffix());
         log.debug("Using CombinedRequestSuffixRegex: '{}'", getCombinedRequestSuffixRegex());
